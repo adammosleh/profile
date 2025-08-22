@@ -1,0 +1,391 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: arial,sans-serif;
+    font-size: 1rem;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+  background-color: #0b111e;
+  direction: ltr;
+  display: grid;
+  place-items: center;
+  
+}
+
+
+/* ==========================header=================== */
+.header{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  
+  color: #786ee7;
+  position: relative;
+  
+  
+}
+
+.header h5{
+ 
+  font-size: clamp(16px, 5vw, 20px);
+}
+.header .icon
+{
+
+   width: clamp(20px, 5vw, 50px);
+}
+
+/* =========================prof================== */
+
+.prof {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+ 
+  text-align: center;
+  margin-bottom: 100px;
+}
+.prof .name span{
+  color: white;
+  text-align: center;
+  
+  
+}
+.prof .name h2 , button{
+  color: #786ee7;
+}
+.prof .name h2{
+  font-weight: bold;
+}
+
+.prof .name button{
+  padding:  10px 10px;
+  border-radius: 10px;
+  background-color: inherit;
+  border: 1px solid #786ee7;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.name .button .button2{
+  background-color: #786ee7;
+  color: inherit;
+}
+.name .button1:hover{
+  background-color: #786ee7;
+  color: inherit;
+}
+
+.prof .content{
+ display: grid;
+ grid-template-columns: repeat(3 , 1fr);
+ gap: 150px;
+ margin: 0 auto;
+ text-align: center;
+
+}
+.content .social{
+ align-content: end;
+ justify-items: center;
+ 
+  color: #786ee7;
+}
+
+.social i{
+  background-color: #151c28;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+}
+.social img{
+  width: 300px;
+  
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.social span{
+  writing-mode: vertical-lr;
+}
+
+
+
+@media screen and (width:200px) and (max-width:800px) {
+  .header{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  }
+  
+  
+}
+
+
+
+@media screen and (max-width:992px) {
+
+  .prof{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+  }
+
+  .prof .name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+   
+    margin:0 auto;
+  }
+
+  .prof .content{
+    width: 80%;
+    
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+  }
+  
+  
+  
+}
+
+
+
+/* ========================About================================= */
+
+.about_header{
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.about_header span{
+  color: white;
+}
+.about_header h5{
+  color: #786ee7;
+}
+
+
+.About {
+  width: 100%;
+  display: flex;
+  justify-content: center;   /* يخلي المحتوى في المنتصف */
+  padding: 50px 0;           /* مسافة علوية وسفلية */
+}
+
+
+.about_container {
+  display: flex; 
+  align-items: center;       /* توسيط عمودي للصورة مع النصوص */
+  justify-content: center;
+  gap: 40px;                 /* مسافة بين الصورة والمحتوى */
+  max-width: 1100px;         /* عرض الحاوية */
+  width: 80%;                /* مسافة جانبية */
+}
+
+.about_img {
+  width: 300px;
+  height: 250px;
+  max-width: 500px;
+  border-radius: 20px;       /* حواف ناعمة */
+}
+
+.about_data {
+  flex: 1;                  /* تاخذ المساحة المتبقية */
+}
+
+.about_info {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+  gap: 30px;
+  
+}
+
+.about_box {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #151c28;
+  border-radius: 10px;
+  color: white;
+}
+
+.about_box i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.about_data p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 500px;
+  text-align: justify;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #786ee7;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media screen and (max-width:992px){
+  .About{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .About .about_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about_container .about_data{
+   
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about_data button{
+    width: 30%;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+
+
+
+/* =====================================skills=========================== */
+
+.skills{
+  width: 100%;
+  margin-top: 30px;
+}
+.skills > span{
+  text-align: center;
+  color: white;
+  display: block;
+
+}
+.skills > h3 {
+  color: #786ee7;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.skills .skills_container{
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin: 0 auto;
+
+  
+}
+
+.skills .skills_container .skills_content{
+  background-color: #151c28;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 60%;
+  height: 50%;
+  max-width: 800px;
+  min-height: 400px;
+  padding: 20px 30px;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+   
+}
+.skills_content  h3{
+  padding: 0 50px;
+  text-align: center;
+  margin: 20px auto;
+  color: #786ee7;
+}
+
+.skills_content .skills_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 50px;
+}
+
+.skills_box .skills_group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  
+}
+
+.skills_group .skills_data{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+.skills_data i{
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #786ee7;
+}
+.skills_data .skills_name span{
+  font-weight: 300;
+  margin-left: 5px;
+}
+.skills_data .skills_name{
+  line-height: 0.2;
+}
+
+@media screen and (max-width:992px) {
+  .skills_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .skills_container .skills_content{
+    width: 100%;
+    min-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px auto;
+    
+  }
+  .skills_container .skills_box  {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    
+  }
+}
