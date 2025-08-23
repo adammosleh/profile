@@ -422,8 +422,8 @@ button {
   max-width: 500px;
   padding: 20px 30px;
   display: flex;
-  justify-content: center;
-  align-items: start;
+  
+  align-items: center;
   flex-direction: column;
   background-color: #151c28;
   border-radius: 20px;
